@@ -158,6 +158,7 @@ font-size: 2rem;
   align-items: center;
   gap: 1rem;
   grid-column: 1;
+  cursor: pointer;
 }
 .icon svg {
   height: 1.25rem;
@@ -179,7 +180,6 @@ font-size: 2rem;
   font-size: 1.25em;
   font-weight: 600;
   line-height: 2;
-  cursor: pointer;
 }
 
 
@@ -217,13 +217,32 @@ h2.projects {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   min-height: min-content;      /* Watch out here */
-  cursor: pointer;
 }
+
 .project-card {
   display: flex;
-  height: 200px;
+  min-height: 200px;
   border-left: 5px solid var(--accent-orange);
   flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.project-card p, h3 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.card-button-container {
+  display: flex;
+  height: 1.5rem;
+  justify-content: end;
+  justify-self: end;
+  gap: 1rem;
+}
+
+.card-button-container svg {
+  cursor: pointer;
 }
 /* END OF PROJECTS SECTION */
 
