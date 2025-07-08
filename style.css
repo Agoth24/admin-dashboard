@@ -88,6 +88,13 @@ input[type="search"] {
 .greeting {
   display: flex;
   grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  height: 4rem;
+  border-radius: 3rem;
 }
 .greeting p {
   font-weight: 600;
@@ -233,6 +240,10 @@ h2.projects {
   cursor: pointer;
 }
 
+.project-card p, .announcement-card p, .trending-account-text :nth-child(2) {
+  color: rgb(75,75,75);
+}
+
 .card-button-container {
   display: flex;
   height: 1.5rem;
@@ -282,11 +293,27 @@ h2.trending-title {
 }
 
 .trending-card {
-
+display: flex;
+flex-direction: column;
+gap: 2rem;
 }
 
 .trending-card p{
   margin: 0;
+}
+
+.trending-account {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.trending-account-text :first-child {
+  font-size: 0.9em;
+  align-self: center;
+}
+
+.trending-account-text :nth-child(2) {
+  font-size: 0.9em;
 }
 
 /* END OF SIDE DASHBOARD */
