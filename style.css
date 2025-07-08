@@ -233,7 +233,6 @@ h2.projects {
 .announcement-card,
 .trending-card {
   background-color: var(--bg-white);
-  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   min-height: min-content;      /* Watch out here */
@@ -291,15 +290,22 @@ h2.announcement-title {
 }
 
 .announcement-card {
-  display: block;
-  gap: 2rem;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 1.5rem;
+  justify-content: space-between;
 }
 
 .announcement-card p {
   font-size: 0.75em;
 }
-
+.announcement-card hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: lightgray;
+}
 
 h2.trending-title {
   margin: 0;
@@ -309,6 +315,7 @@ h2.trending-title {
 display: flex;
 flex-direction: column;
 gap: 2rem;
+padding: 1.5rem;
 }
 
 .trending-card p{
