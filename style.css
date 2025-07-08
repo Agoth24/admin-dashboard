@@ -73,10 +73,23 @@ input[type="search"] {
   accent-color: var(--accent-orange);
 }
 
-.top-header p {
+.user-credentials {
   text-align: right;
-  font-size: 1.125em;
+  font-size: 1.05em;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: end;
+  
+}
+
+.user-credentials svg {
+  height: 2rem;
+}
+
+.user-credentials > * {
+  cursor: pointer;
 }
 .bottom-header {
   display: grid;
